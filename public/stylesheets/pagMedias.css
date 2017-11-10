@@ -1,0 +1,38 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+body {
+  margin-top: 20px;
+  padding:50px;
+  font: 44px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+table{
+  font: 34px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+.wis{
+  margin: 40px;
+  height: 100%;
+  width: 800px;
+  font-size: 25px;
+  
+}
+
+footer {
+
+    padding-bottom: 50px;
+}
+
+
+

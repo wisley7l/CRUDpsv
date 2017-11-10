@@ -1,0 +1,111 @@
+<md-dialog aria-label="Mango (Fruit)">
+<md-toolbar>
+    <div class="md-toolbar-tools">
+      
+       <span flex
+        class="glyphicon glyphicon-user">
+      </span>
+      <h1>Editar Pessoa</h1>
+      <span flex></span>
+      <md-button aria-label="Cancelar" class="md-icon-button" 
+      ng-click="Ctrl.cancelar()">
+        <span class="glyphicon glyphicon-remove"></span>
+      </md-button>
+    </div>
+    </md-toolbar>
+<form name="mesoForm">
+ 
+  <md-dialog-content>
+    <div class="md-dialog-content">
+      
+      <md-input-container class="md-block" flex>
+        <label>CPF</label>
+        <input id="cpf" disabled ng-model="Ctrl.pessoa.cpf">
+      </md-input-container>
+  
+      <md-input-container class="md-block" flex>
+        <label>Nome</label>
+        <input id="nome" name="nome" 
+        ng-model="Ctrl.pessoa.nom_pessoa" required>
+      </md-input-container>
+      
+       
+        <div layout="row">
+        <md-input-container>
+          <label>Idade</label>
+          <input ng-model="Ctrl.pessoa.idade_pessoa" id="idade" style="height:30px" name="idade" type="number">
+        </md-input-container>
+
+
+        <md-input-container>
+          <label>Sexo</label>
+          <md-select id="sexo" name="sexo" ng-model="Selectsexo">
+            <md-option  ng-repeat="state in Ctrl.vecSexo" ng-value="state" >
+              {{state.name}}
+            </md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+    
+      <div>
+          <md-input-container>
+          <label>Endereço</label>
+        </md-input-container>
+      
+        <md-input-container>
+          <label>Rua/Av:</label>
+          <input id="end" name="end" ng-model="Ctrl.pessoa.end_pessoa" style="height:54px">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Cidade</label>
+          <md-select id="cidade" ng-model="escolhidoCidade" ng-click="Ctrl.gListaC()">
+            <md-option ng-repeat="state in cidades" ng-value="state" >
+              {{state.cidade.nom_cidade}}
+            </md-option>
+          </md-select>
+        </md-input-container>
+
+         <md-input-container>
+          <label>UF</label>
+          <md-select id="estados" ng-model="escolhidoEstado">
+            <md-option ng-repeat="state in Ctrl.estados" ng-value="state" >
+              {{state.estados.nom_estado}}
+            </md-option>
+          </md-select>
+        </md-input-container>
+        
+
+      
+     
+
+      </div>
+    </div>
+    
+
+
+    </md-dialog-content>
+           
+    <md-dialog-actions>
+  
+      <md-button class="md-raised md-primary" ng-click="Ctrl.Bok()" 
+      type="submit">
+      <span 
+        class="glyphicon glyphicon-floppy-disk">
+      </span>
+      Salvar
+      </md-button>
+  
+      <md-button class="md-raised md-primary" ng-click="Ctrl.cancelar()">
+        <span 
+        class="glyphicon glyphicon-remove">
+      </span>
+        Cancelar
+        </md-button>
+  
+    </md-dialog-actions>
+ 
+
+</form>
+</md-dialog>
+

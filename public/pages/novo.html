@@ -1,0 +1,24 @@
+<div>
+<h1>Adicionar Pessoa</h1>
+</div>
+<div>
+    
+</div>
+<div>
+     <br>
+        CPF : <i><input id="cpf" style="width:99px;height:20px"> &nbsp</i>
+        Nome: <i><input id="nome" style="height:20px"> &nbsp</i>
+        Sexo: <i><select style="height:20px" id="sexo" ng-model="Ctrl.Selectsexo" ng-options="item.name for item in Ctrl.vecSexo"> &nbsp</select></i>
+        
+        Idade: <i><input id="idade" style="width:30px;height:20px"> &nbsp</i>
+        </br>
+        <br>Endereço: </br>
+        <br>
+        Rua/Av :<i><input id="end" style="height:20px"  > &nbsp</i>
+        Cidade : <i><select style="width:105px;height:20px" id="cidade" ng-model="Ctrl.escolhido" ng-options="item.cidade.nom_cidade +'-' +item.cidade.uf_estado for item in Ctrl.cidades"> &nbsp</select></i>
+        UF : <i><input id="estado" style="width:30px;height:20px" disabled ng-value="Ctrl.escolhido.cidade.uf_estado" > &nbsp</i>
+        </br>
+        <a href="" ng-click="Ctrl.salvar()">Salvar</a>
+        <a href="#!/Lista">Cancelar</a> 
+      
+ </div>

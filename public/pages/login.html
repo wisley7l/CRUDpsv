@@ -1,0 +1,59 @@
+<md-dialog aria-label="Mango (Fruit)">
+<md-toolbar>
+    <div class="md-toolbar-tools">
+       <span flex
+        class="glyphicon glyphicon-user">
+      </span>
+      <h1> Login</h1>
+      <span flex></span>
+      <md-button aria-label="Cancelar" class="md-icon-button" 
+      ng-click="Ctrl.cancelar()">
+        <span class="glyphicon glyphicon-remove"></span>
+      </md-button>
+    </div>
+    </md-toolbar>
+<form name="mesoForm">
+ 
+  <md-dialog-content>
+    <div class="md-dialog-content">
+      
+      <md-input-container class="md-block" flex>
+        <label>CPF</label>
+        <input id="cpf" ng-model="cpf">
+      </md-input-container>
+  
+      <md-input-container class="md-block" flex>
+        <label>Senha</label>
+        <input id="senha" name="senha" 
+        ng-model="senha" type="password">
+      </md-input-container>
+      
+       
+      </div>
+ <md-dialog-actions>
+  
+      <md-button class="md-raised md-primary" ng-click="Ctrl.salvar()" 
+      type="submit">
+      <span 
+        class="glyphicon glyphicon-floppy-disk">
+      </span>
+      Logar
+      </md-button>
+  
+      <md-button class="md-raised md-primary" ng-click="Ctrl.cancelar()">
+        <span 
+        class="glyphicon glyphicon-remove">
+      </span>
+        Cancelar
+        </md-button>
+  
+    </md-dialog-actions>
+
+    </md-dialog-content>
+           
+   
+ 
+
+</form>
+</md-dialog>
+

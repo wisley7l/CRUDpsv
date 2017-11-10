@@ -1,0 +1,95 @@
+<div class="footer-right-logo">
+    <!--
+     <a id= "Limpar" ng-click="Ctrl.limpar()" href="">
+        <span 
+        class="glyphicon glyphicon-off">
+      </span>      
+      Sair </a>
+       -->
+</div>
+<div>
+<h1>Pessoas Cadastradas</h1>
+</div>
+<div>
+   
+  <!--
+<md-button  ng-model="check"
+id= "exibir" class="ustom-button md-primary md-raised custom-grid-plus-button" ng-click="Ctrl.atualizar()">
+        <span 
+        class="glyphicon glyphicon-eye-open">
+      </span>
+        Exibir
+        </md-button>
+
+  -->
+     
+
+</div>
+
+<div>
+<!--      <meta http-equiv="refresh" content="5;url=#!/Lista">-->
+    
+ <table class="table table-striped">
+    <tr></br>
+        <th>CPF &nbsp</th>
+        <th> NOME  &nbsp</th>
+        <th> SEXO  &nbsp</th>
+        <th> IDADE &nbsp</th>
+        <th> ENDEREÇO &nbsp</th>
+        <th> CIDADE &nbsp</th>
+        <th> ESTADO &nbsp</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="p in Ctrl.pessoas">
+        
+        <td><i>{{p.info.cpf}} &nbsp</td>
+        <td><i>{{p.info.nom_pessoa}} &nbsp</td>
+        <td><i>{{p.sexo}} &nbsp</td>
+        <td><i>{{p.info.idade_pessoa}} &nbsp</td>
+        <td><i>{{p.info.end_pessoa}} &nbsp</td>
+        <td><i>{{p.info.nom_cidade}} &nbsp</td>
+        <td><i>{{p.info.uf_estado}} &nbsp</td>
+        <td >
+        <md-button  aria-label="Editar"  class="md-fab md-mini md-primary" ng-click="Ctrl.popup(p.info.cpf)">
+        <span
+          class="glyphicon glyphicon-pencil"></span>
+        </md-button>
+        </td>
+        <td>
+        <md-button  aria-label="Remover"  class="md-fab md-mini md-primary" ng-click="Ctrl.remove(p.info.cpf)">
+            <span
+          class="glyphicon glyphicon-trash"></span>
+            </md-button></td>
+    
+        
+    </tr>
+    <tr>
+        <td>
+                <md-button  aria-label="Adicionar"  
+                class="md-fab md-primary" ng-click="Ctrl.Add()">
+                        <span
+                        class="glyphicon glyphicon-plus">
+                        </span>
+                        <span
+                        class="glyphicon glyphicon-user">
+                        </span>
+                </md-button>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
+    </tr>
+    
+ </table>
+ <div>
+     
+ 
+     
+ 
